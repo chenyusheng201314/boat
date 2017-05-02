@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    height: 100%;
+    background: url("../image/bg.jpg") no-repeat;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+}
+.body{
+    height: 100%;
+    width: 100%;
+    background: rgba(104,208,239,0.2);
+}
+.moon{
+    width: 150px;
+    height: 174px;
+    background: url("../image/moon.png") no-repeat;
+    position: absolute;
+    left: 260px;
+    top: 90px;
+    transform: rotateZ(15deg);
+    animation-name: moon;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes moon{
+     0%{
+         transform: rotateZ(5deg);
+     }
+    50%{
+        transform: rotateZ(-15deg);
+    }
+    100%{
+        transform: rotateZ(5deg);
+    }
+}
+.cloud-l{
+    width: 147px;
+    height: 400px;
+    background: url("../image/cloud_01.png") no-repeat;
+    position: absolute;
+    left: 180px;
+    top: -250px;
+    animation-name: cloud-l;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud-l{
+    0%{
+        top:-250px;
+    }
+    50%{
+        top:-200px;
+    }
+    100%{
+        top:-250px;
+    }
+}
+.cloud-m{
+    width: 184px;
+    height: 400px;
+    background: url("../image/cloud_02.png") no-repeat;
+    position: absolute;
+    left: 540px;
+    animation-name: cloud-m;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud-m{
+    0%{
+        top:-150px;
+    }
+    50%{
+        top:-200px;
+    }
+    100%{
+        top:-150px;
+    }
+}
+
+.cloud-r{
+    width: 228px;
+    height: 400px;
+    background: url("../image/cloud_03.png") no-repeat;
+    position: absolute;
+    left: 940px;
+    top: -200px;
+    animation-name: cloud-r;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud-r{
+    0%{
+        top:-200px;
+    }
+    50%{
+        top:-150px;
+    }
+    100%{
+        top:-200px;
+    }
+}
+.sea1{
+    width: 100%;
+    height: 270px;
+    background: url("../image/wave_03.png") no-repeat;
+    position: fixed;
+    left: 0;
+    animation-name: sea1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes sea1{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.sea2{
+    width: 100%;
+    height: 223px;
+    background: url("../image/wave_02.png") no-repeat;
+    position: fixed;
+    left: 0;
+    animation-name: sea2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes sea2{
+    0%{
+        bottom: 30px;
+    }
+    50%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+.sea3{
+    width: 100%;
+    height: 213px;
+    background: url("../image/wave_01.png") no-repeat;
+    position: fixed;
+    left: 0;
+    bottom: -30px;
+    animation-name: sea3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes sea3{
+    0%{
+        bottom: -30px;
+    }
+    50%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -30px;
+    }
+}
+.ship{
+    width: 412px;
+    height: 409px;
+    background: url("../image/ship.png") no-repeat;
+    position: absolute;
+    left: 670px;
+    top: 130px;
+    animation-name: ship;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ship{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-25deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+.fish1{
+    width: 235px;
+    height: 94px;
+    background: url("../image/fish_01.png") no-repeat;
+    position: absolute;
+    left: 530px;
+    bottom: 50px;
+    animation-name: fish1;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fish1{
+    0%{
+        left: 550px;
+        bottom: 50px;
+        transform: rotateZ(0deg);
+    }
+    25%{
+        left: 500px;
+        bottom: 200px;
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        left: 350px;
+        bottom: 300px;
+        transform: rotateZ(-30deg);
+    }
+    75%{
+        left: 200px;
+        bottom: 200px;
+        transform: rotateZ(-40deg);
+    }
+    100%{
+        left: 50px;
+        bottom: 50px;
+        transform: rotateZ(-40deg);
+    }
+}
+.fish2{
+    width: 228px;
+    height: 139px;
+    background: url("../image/fish_02.png") no-repeat;
+    position: absolute;
+    left: 350px;
+    bottom: 0px;
+    animation-name: fish2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fish2{
+    0%{
+        left: 350px;
+        bottom: 0px;
+        transform: rotateZ(0deg);
+    }
+    25%{
+        left: 300px;
+        bottom: 150px;
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        left: 250px;
+        bottom: 150px;
+        transform: rotateZ(-30deg);
+    }
+    75%{
+        left: 200px;
+        bottom: 150px;
+        transform: rotateZ(-50deg);
+    }
+    100%{
+        left: 100px;
+        bottom: 0px;
+        transform: rotateZ(-50deg);
+    }
+}
+.cloud-4{
+    width: 135px;
+    height: 82px;
+    background: url("../image/cloud_04.png") no-repeat;
+    position: absolute;
+    top: 170px;
+    animation-name : cloud_04;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud_04{
+    0%{
+        left: 940px;
+    }
+    50%{
+        left: -200px;
+    }
+    100%{
+        left: 940px;
+    }
+}
